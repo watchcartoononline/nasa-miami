@@ -4,12 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>nasa.miami</title>
+		<style>clickable{cursor: pointer;}</style>
 	</head>
 	<body style="background-color:black;color:white">
 		<h1>mercury</h1>
-		<a id="playbutt" onclick="playAudio('music');
+		<a id="toland" onclick="playAudio('music');
 			document.getElementById('toland').innerHTML = 'LANDED ON MERCURY'">
-			<p id="toland">CLICK TO LAND ON MERCURY</p>
+			<clickable>CLICK TO LAND ON MERCURY</clickable>
 		</a>
 		<audio id="music">
 			<source src="../resources/Love in Outer Space (Vocal).mp3" type="audio/mpeg">
