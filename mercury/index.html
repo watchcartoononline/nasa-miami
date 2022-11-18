@@ -7,5 +7,17 @@
 	</head>
 	<body style="background-color:black;color:white">
 		<h1>mercury</h1>
+		<a id="playbutt" onclick="playAudio('music');
+			document.getElementById('toland').innerHTML = 'LANDED ON MERCURY'">
+			<p id="toland">CLICK TO LAND ON MERCURY</p>
+		</a>
+		<audio id="music">
+			<source src="../resources/Love in Outer Space (Vocal).mp3" type="audio/mpeg">
+		</audio>
+		<script>
+			function playAudio(id){
+				document.getElementById(id).play();
+			}
+		</script>
 	<body>
 </html>
